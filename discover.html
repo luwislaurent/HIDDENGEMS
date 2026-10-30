@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#d5ff49">
+<title>Discover a Hidden Gem — Gent</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="site.js" defer></script>
+<script src="discover.js" defer></script>
+</head>
+<body>
+<header class="header">
+<a class="brand" href="index.html" aria-label="Hidden Gems homepage"><img src="original-header-logo.png" alt="Hidden Gems"></a>
+<nav class="nav"><a href="index.html">About</a><a href="places.html">places</a><a href="info.html">Info</a><a href="map.html">Maps</a><a href="discover.html" aria-current="page">Discover</a><a href="info.html#contact">CONTACT</a></nav>
+</header>
+<main class="discover-page">
+<section class="discover-head">
+<p class="eyebrow">SUPPORT THE LOCALS / GENT</p>
+<h1>WHY KEEP FEEDING THE GIANTS?</h1>
+<p class="manifesto">GOOD PLACES DESERVE TO STAY.</p>
+<p class="intro">Find your next Hidden Gem. Independent places, real stories and local character.</p>
+<p class="context" id="campaign-context" hidden></p>
+</section>
+<section class="discover-results" aria-label="Ontdek lokale zaken">
+<div class="discover-toolbar">
+<label for="category">WHAT ARE YOU LOOKING FOR?</label>
+<select id="category">
+<option value="all">ALL PLACES</option>
+<option value="coffee">COFFEE</option>
+<option value="cafe">CAFÉS & BARS</option>
+<option value="food">FOOD</option>
+</select>
+<label class="search-label" for="search">SEARCH</label>
+<input id="search" type="search" placeholder="Search by name or street…">
+</div>
+<p id="result-count" class="result-count" aria-live="polite"></p>
+<div id="discover-list"></div>
+<p class="disclaimer">Dit is een eerste selectie; adressen, beschrijvingen en categorieën zijn nog te controleren. Resultaten zijn niet automatisch gerangschikt op afstand.</p>
+</section>
+<section class="discover-map">
+<a href="map.html">EXPLORE THE INTERACTIVE MAP ↗</a>
+</section>
+</main>
+<div class="swipe" aria-hidden="true"></div>
+</body></html>
